@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumanta Pani | AI Product Manager</title>
-    <meta name="description" content="Portfolio of Sumanta Pani, an AI Product Manager specializing in B2B Retail, BizOps, and Generative AI solutions.">
+    <meta name="description" content="Portfolio of Sumanta Pani, AI Product Manager. Projects: SpendLens, OpenTeller, Nexus AI, Sentiment Scout.">
     
     <script type="application/ld+json">
     {
@@ -17,7 +17,7 @@
         "https://www.linkedin.com/in/sumantapani-pm", 
         "https://github.com/sumantapani-pm"
       ],
-      "knowsAbout": ["Artificial Intelligence", "Product Management", "Python", "B2B Retail", "ContextIQ"]
+      "knowsAbout": ["Artificial Intelligence", "Product Management", "SpendLens", "OpenTeller", "Nexus AI"]
     }
     </script>
 
@@ -29,10 +29,16 @@
         .role { color: var(--primary); font-weight: 600; font-size: 1.2rem; }
         .bio { font-size: 1.1rem; color: #4b5563; margin-top: 1rem; }
         .section-title { font-size: 1.5rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
-        .project-card { border: 1px solid #e5e7eb; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; transition: transform 0.2s; }
+        
+        /* Card Design */
+        .project-card { border: 1px solid #e5e7eb; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; transition: transform 0.2s; background: #fff; }
         .project-card:hover { transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .project-header { display: flex; justify-content: space-between; align-items: flex-start; }
         .project-title { font-weight: 700; font-size: 1.25rem; color: #111827; }
-        .tech-stack { font-size: 0.875rem; color: var(--primary); margin-top: 0.5rem; font-family: monospace; }
+        .repo-link { font-size: 0.9rem; text-decoration: none; color: var(--primary); border: 1px solid var(--primary); padding: 0.2rem 0.6rem; border-radius: 4px; }
+        .repo-link:hover { background: var(--primary); color: white; }
+        
+        .tech-stack { font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem; font-family: monospace; background: #f3f4f6; display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px; }
         .links { margin-top: 2rem; }
         .btn { display: inline-block; background: var(--primary); color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 6px; font-weight: 500; }
         .btn:hover { background: #1d4ed8; }
@@ -55,19 +61,44 @@
     </header>
 
     <section>
-        <div class="section-title">Selected Projects</div>
+        <div class="section-title">Technical Projects</div>
 
         <div class="project-card">
-            <div class="project-title">ContextIQ</div>
-            <div class="tech-stack">Python • NLP • Real-time Translation</div>
-            <p>A real-time chat translation engine designed to break language barriers in B2B retail communication. Solves latency issues in cross-border negotiations.</p>
+            <div class="project-header">
+                <div class="project-title">SpendLens Analytics</div>
+                <a href="https://github.com/sumantapani-pm/spendlens-analytics" class="repo-link" target="_blank">View Code →</a>
+            </div>
+            <div class="tech-stack">Python • Data Analytics • Financial Modeling</div>
+            <p>An analytics engine designed to visualize and optimize procurement spending patterns, reducing operational leakage in B2B contexts.</p>
         </div>
 
         <div class="project-card">
-            <div class="project-title">RetailPulse AI</div>
-            <div class="tech-stack">Predictive Analytics • Churn Prediction</div>
-            <p>An AI model analyzing offline retail data to predict B2B partner churn before it happens, enabling proactive retention strategies.</p>
+            <div class="project-header">
+                <div class="project-title">OpenTeller Protocol</div>
+                <a href="https://github.com/sumantapani-pm/OpenTeller-Protocol" class="repo-link" target="_blank">View Code →</a>
+            </div>
+            <div class="tech-stack">Voice AI • Accessibility • Fintech</div>
+            <p>A voice-first banking protocol designed to assist visually impaired users with secure, dialogue-based ATM interactions.</p>
         </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title">Nexus AI</div>
+                <a href="https://github.com/sumantapani-pm/nexus-ai" class="repo-link" target="_blank">View Code →</a>
+            </div>
+            <div class="tech-stack">GenAI • LLM Orchestration • Workflow Automation</div>
+            <p>An experimental AI orchestration layer that connects disparate business data points into a unified, queryable knowledge base.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title">Sentiment Scout</div>
+                <a href="https://github.com/sumantapani-pm/sentiment-scout" class="repo-link" target="_blank">View Code →</a>
+            </div>
+            <div class="tech-stack">NLP • Customer Experience • Python</div>
+            <p>A customer feedback analysis tool that classifies unstructured reviews into actionable insights to reduce churn.</p>
+        </div>
+
     </section>
 
     <footer>
